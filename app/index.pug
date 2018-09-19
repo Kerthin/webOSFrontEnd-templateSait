@@ -5,15 +5,107 @@ html
 		.statusBar
 			.statusBar_button
 		.swiper-container
-			.swiper.swiper-wrapper
-				#multiFirst.swiper-slide
-					.layer.list
-						mixin tileCell(appLinkMix, tileIconBgMix, tileAppNameMix)
-							.tileListCell
-								.tile__item
-									a(href=`${appLinkMix}`)
-										.tileIcon(class=`tileIcon_${tileIconBgMix}`)
-										.tileAppNameWrap
-											p.tileAppNameWrap__tileAppName #{tileAppNameMix}
-						+tileCell('https://www.youtube.com', 'mail', 'Mail')
+			.swiper-wrapper
+				#firstDragSlide.swiper-slide
+					.desk(data-force='30')
+						.desk__iconList
+							mixin iconListCellMix(appLinkMix, appIconMix, appNameMix)
+								.desk__iconListCell
+									.desk__iconWrap
+										a(href=`${appLinkMix}`)
+											.desk__icon(class=`desk__icon_${appIconMix}`)
+											.desk__iconNameWrap
+												p.desk__iconName #{appNameMix}
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+				#secondDragSlide.swiper-slide
+					.desk(data-force='30')
+						.desk__iconList
+							mixin iconListCellMix(appLinkMix, appIconMix, appNameMix)
+								.desk__iconListCell
+									.desk__iconWrap
+										a(href=`${appLinkMix}`)
+											.desk__icon(class=`desk__icon_${appIconMix}`)
+											.desk__iconNameWrap
+												p.desk__iconName #{appNameMix}
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+				#thirdDragSlide.swiper-slide
+					.desk(data-force='30')
+						.desk__iconList
+							mixin iconListCellMix(appLinkMix, appIconMix, appNameMix)
+								.desk__iconListCell
+									.desk__iconWrap
+										a(href=`${appLinkMix}`)
+											.desk__icon(class=`desk__icon_${appIconMix}`)
+											.desk__iconNameWrap
+												p.desk__iconName #{appNameMix}
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
+							+iconListCellMix('https://www.youtube.com', 'mail', 'Mail')
 		include template/sripts.pug
