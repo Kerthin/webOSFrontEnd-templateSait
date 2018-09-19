@@ -2,6 +2,9 @@
 ::-webkit-scrollbar {
 	width: 0;
 }
+a {
+	text-decoration: none;
+}
 .statusBar {
 	width: 100%;
 	height: 2vh;
@@ -14,6 +17,67 @@
 
 		&.active {
 			background-color: blue;
+		}
+	}
+}
+.swiper-container {
+	width: 100%;
+	height: 96vh;
+	overflow: hidden;
+
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+
+		.swiper-slide {
+			.desk {
+				width: 100%;
+				height: 100%;
+				color: #FF7270;
+				background-color: #fff;
+				overflow: hidden;
+
+				.desk__iconList {
+					display: flex;
+					justify-content: space-around;
+					flex-wrap: wrap;
+
+					.desk__iconListCell {
+						width: 144px;
+						height: 16vh;
+						display: flex;
+						float: left;
+						align-items: center;
+						margin: 0 7%;
+						background-color: red;
+
+						.desk__iconWrap {
+							width: 100%;
+							height: 160px;
+
+							.desk__icon {
+								width: 100%;
+								height: 144px;
+								background-color: green;
+							}
+
+							.desk__iconNameWrap {
+								display: flex;
+								justify-content: space-around;
+								flex-wrap: wrap;
+								width: 100%;
+								height: 16px;
+								background-color: pink;
+
+								.desk__iconName {
+									text-decoration: none;
+									color: #000;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
