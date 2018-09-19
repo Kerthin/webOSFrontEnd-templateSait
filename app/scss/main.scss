@@ -59,7 +59,29 @@ a {
 							.desk__icon {
 								width: 100%;
 								height: 144px;
-								background-color: green;
+								background-size: contain;
+								background-position: center;
+								background-repeat: no-repeat;
+
+								$iconPathLg : "../image/icon_144px";
+								$iconPathMd : "../image/icon_96px";
+								$iconPathSm : "../image/icon_72px";
+
+								@mixin appIconMix($appIcon) {
+									&.desk__icon_#{$appIcon} {
+										background: url(#{$iconPathLg}/#{$appIcon}.jpg);
+
+										@media screen and (max-width: 1327px) {
+											background: url(#{$iconPathMd}/#{$appIcon}.jpg);
+										}
+
+										@media screen and (max-width: 891px) {
+											background: url(#{$iconPathSm}/#{$appIcon}.jpg);
+										}
+									}
+								}
+
+								@include appIconMix(calendar);
 
 								@media screen and (max-width: 1327px) {
 									height: 96px;
