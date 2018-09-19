@@ -4,4 +4,16 @@ html
 	body
 		.statusBar
 			.statusBar_button
+		.swiper-container
+			.swiper.swiper-wrapper
+				#multiFirst.swiper-slide
+					.layer.list
+						mixin tileCell(appLinkMix, tileIconBgMix, tileAppNameMix)
+							.tileListCell
+								.tile__item
+									a(href=`${appLinkMix}`)
+										.tileIcon(class=`tileIcon_${tileIconBgMix}`)
+										.tileAppNameWrap
+											p.tileAppNameWrap__tileAppName #{tileAppNameMix}
+						+tileCell('https://www.youtube.com', 'mail', 'Mail')
 		include template/sripts.pug
