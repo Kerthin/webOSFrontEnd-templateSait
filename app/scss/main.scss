@@ -6,6 +6,12 @@
 a {
 	text-decoration: none;
 }
+body {
+	background-image: url('../image/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 .statusBar {
 	width: 100%;
 	height: 2vh;
@@ -34,8 +40,6 @@ a {
 			.desk {
 				width: 100%;
 				height: 100%;
-				color: #FF7270;
-				background-color: #fff;
 				overflow: hidden;
 
 				.desk__iconList {
@@ -50,7 +54,6 @@ a {
 						float: left;
 						align-items: center;
 						margin: 0 7%;
-						background-color: red;
 
 						.desk__iconWrap {
 							width: 100%;
@@ -69,19 +72,42 @@ a {
 
 								@mixin appIconMix($appIcon) {
 									&.desk__icon_#{$appIcon} {
-										background: url(#{$iconPathLg}/#{$appIcon}.jpg);
+										background: url(#{$iconPathLg}/#{$appIcon}.png);
 
 										@media screen and (max-width: 1327px) {
-											background: url(#{$iconPathMd}/#{$appIcon}.jpg);
+											background: url(#{$iconPathMd}/#{$appIcon}.png);
 										}
 
 										@media screen and (max-width: 891px) {
-											background: url(#{$iconPathSm}/#{$appIcon}.jpg);
+											background: url(#{$iconPathSm}/#{$appIcon}.png);
 										}
 									}
 								}
 
+								@include appIconMix(facetime);
 								@include appIconMix(calendar);
+								@include appIconMix(photos);
+								@include appIconMix(camera);
+								@include appIconMix(mail);
+								@include appIconMix(clock);
+								@include appIconMix(maps);
+								@include appIconMix(weather);
+								@include appIconMix(notes);
+								@include appIconMix(reminders);
+								@include appIconMix(stocks);
+								@include appIconMix(videos);
+								@include appIconMix(iTunesStore);
+								@include appIconMix(appStore);
+								@include appIconMix(iBooks);
+								@include appIconMix(health);
+								@include appIconMix(home);
+								@include appIconMix(wallet);
+								@include appIconMix(settings);
+								@include appIconMix(phone);
+								@include appIconMix(safari);
+								@include appIconMix(messages);
+								@include appIconMix(appleMusic);
+								@include appIconMix(news);
 
 								@media screen and (max-width: 1327px) {
 									height: 96px;
@@ -100,11 +126,12 @@ a {
 								flex-wrap: wrap;
 								width: 100%;
 								height: 16px;
-								background-color: pink;
 
 								.desk__iconName {
+									font-family: 'Roboto', sans-serif;
+									font-weight: 100;
 									text-decoration: none;
-									color: #000;
+									color: #fff;
 								}
 							}
 
