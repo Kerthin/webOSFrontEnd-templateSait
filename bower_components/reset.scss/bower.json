@@ -1,0 +1,27 @@
+{
+  "name": "reset.scss",
+  "authors": [
+    "Georgios Tzourmpakis <kiougar@gmail.com>"
+  ],
+  "description": "The reset file written in scss as shown in http://meyerweb.com/eric/tools/css/reset/",
+  "main": [
+    "reset.scss",
+    "reset.css"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "reset",
+    "reset.scss",
+    "reset.sass",
+    "reset.css"
+  ],
+  "license": "MIT",
+  "homepage": "www.github.com/kiougar/reset.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
