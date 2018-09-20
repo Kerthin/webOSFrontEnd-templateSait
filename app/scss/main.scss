@@ -62,9 +62,6 @@ body {
 							.desk__icon {
 								width: 100%;
 								height: 144px;
-								background-size: contain;
-								background-position: center;
-								background-repeat: no-repeat;
 
 								$iconPathLg : "../image/icon_144px";
 								$iconPathMd : "../image/icon_96px";
@@ -117,6 +114,43 @@ body {
 								@include appIconMix(messages);
 								@include appIconMix(appleMusic);
 								@include appIconMix(news);
+
+								@include appIconMix(appleWatch);
+								@include appIconMix(contacts);
+								@include appIconMix(findFriends);
+								@include appIconMix(findIPhone);
+								@include appIconMix(garageBand);
+								@include appIconMix(healthBook);
+								@include appIconMix(compass);
+								@include appIconMix(iBooks);
+								@include appIconMix(iMovie);
+								@include appIconMix(iPhoto);
+								@include appIconMix(iTunesRadio);
+								@include appIconMix(iTunesU);
+								@include appIconMix(music);
+								@include appIconMix(passbook);
+								@include appIconMix(photoBooth);
+								@include appIconMix(podcats);
+								@include appIconMix(tips);
+								@include appIconMix(youtube);
+								@include appIconMix(calculator);
+								@include appIconMix(trailers);
+								@include appIconMix(voiceMemos);
+								@include appIconMix(iCloudDrive);
+								@include appIconMix(trashEmpty);
+								@include appIconMix(trashFull);
+
+								@include appIconMix(controlCenter);
+								@include appIconMix(gameCenter);
+								@include appIconMix(iOS8);
+								@include appIconMix(multitaks);
+								@include appIconMix(newstand);
+								@include appIconMix(notificationCenter);
+								@include appIconMix(SDK);
+								@include appIconMix(siri);
+								@include appIconMix(user);
+								@include appIconMix(documents);
+								@include appIconMix(downloads);
 
 								@media screen and (max-width: 1327px) {
 									height: 96px;
