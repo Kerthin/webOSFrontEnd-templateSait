@@ -1,7 +1,7 @@
 /********************
 	JQuery.min.js
 ********************/
-//= ../../bower_components/jquery/dist/jquery.min.js
+//= https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
 
 /********************
 	swiper.min.js
