@@ -73,13 +73,22 @@ body {
 								@mixin appIconMix($appIcon) {
 									&.desk__icon_#{$appIcon} {
 										background: url(#{$iconPathLg}/#{$appIcon}.png);
+										background-size: contain;
+										background-position: center;
+										background-repeat: no-repeat;
 
 										@media screen and (max-width: 1327px) {
 											background: url(#{$iconPathMd}/#{$appIcon}.png);
+											background-size: contain;
+											background-position: center;
+											background-repeat: no-repeat;
 										}
 
 										@media screen and (max-width: 891px) {
 											background: url(#{$iconPathSm}/#{$appIcon}.png);
+											background-size: contain;
+											background-position: center;
+											background-repeat: no-repeat;
 										}
 									}
 								}
@@ -129,9 +138,15 @@ body {
 
 								.desk__iconName {
 									font-family: 'Roboto', sans-serif;
+									font-size: 14px;
 									font-weight: 100;
+									text-align: center;
 									text-decoration: none;
 									color: #fff;
+
+									@media screen and (max-width: 700px) {
+										font-size: 10px;
+									}
 								}
 							}
 
