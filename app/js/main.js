@@ -9,6 +9,11 @@
 //= partials/libs/swiper.min.js
 
 /********************
+	Animsition.min.js
+********************/
+//= partials/libs/animsition.min.js
+
+/********************
 	Sortable.js
 ********************/
 //= partials/libs/Sortable.js
