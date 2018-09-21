@@ -104,7 +104,7 @@ gulp.task('dist',	[
 	'html:dist'		,
 	'style:dist'	,
 	'js:dist'		,
-	'image:dist'	,
+	// 'image:dist'	,
 	'fonts:dist'
 ]);
 
@@ -118,9 +118,9 @@ gulp.task('watch',	function()	{
 	watch([path.watch.js],		function(event,	cb)	{
 		gulp.start('js:dist');
 	});
-	watch([path.watch.image],	function(event,	cb)	{
-		gulp.start('image:dist');
-	});
+	// watch([path.watch.image],	function(event,	cb)	{
+	// 	gulp.start('image:dist');
+	// });
 	watch([path.watch.fonts],	function(event,	cb)	{
 		gulp.start('fonts:dist');
 	});

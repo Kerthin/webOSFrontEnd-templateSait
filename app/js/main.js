@@ -1,7 +1,7 @@
 /********************
 	JQuery.min.js
 ********************/
-//= https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js
+//= partials/libs/jquery-2.2.0.min.js
 
 /********************
 	swiper.min.js
@@ -27,6 +27,16 @@
 	dragSwitch.js
 ********************/
 //= partials/dragSwitch.js
+
+/********************
+	animsitionInitializationMainPage.js
+********************/
+//= partials/animsitionInitializationMainPage.js
+
+/********************
+	animsitionInitializationSecondaryPage.js
+********************/
+//= partials/animsitionInitializationSecondaryPage.js
 
 /********************
 	sortableInitialization.js

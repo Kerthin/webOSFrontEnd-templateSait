@@ -1,7 +1,7 @@
 html
 	head
 		include template/head.pug
-	body
+	body.animsition-overlay(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800")
 		.statusBar
 			.statusBar_button
 		.swiper-container
@@ -12,11 +12,11 @@ html
 							mixin iconListCellMix(appLinkMix, appIconMix, appNameMix)
 								.desk__iconListCell
 									.desk__iconWrap
-										a(href=`${appLinkMix}`)
+										a.desk__appLink(href=`${appLinkMix}` data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000")
 											.desk__icon(class=`desk__icon_${appIconMix}`)
 											.desk__iconNameWrap
 												p.desk__iconName #{appNameMix}
-							+iconListCellMix('https://www.youtube.com', 'facetime', 'Facetime')
+							+iconListCellMix('app.html', 'facetime', 'Facetime')
 							+iconListCellMix('https://www.youtube.com', 'calendar', 'Calendar')
 							+iconListCellMix('https://www.youtube.com', 'photos', 'Photos')
 							+iconListCellMix('https://www.youtube.com', 'camera', 'Camera')
@@ -46,7 +46,7 @@ html
 							mixin iconListCellMix(appLinkMix, appIconMix, appNameMix)
 								.desk__iconListCell
 									.desk__iconWrap
-										a(href=`${appLinkMix}`)
+										a.desk__appLink(href=`${appLinkMix}` data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000")
 											.desk__icon(class=`desk__icon_${appIconMix}`)
 											.desk__iconNameWrap
 												p.desk__iconName #{appNameMix}
@@ -80,7 +80,7 @@ html
 							mixin iconListCellMix(appLinkMix, appIconMix, appNameMix)
 								.desk__iconListCell
 									.desk__iconWrap
-										a(href=`${appLinkMix}`)
+										a.desk__appLink(href=`${appLinkMix}` data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000")
 											.desk__icon(class=`desk__icon_${appIconMix}`)
 											.desk__iconNameWrap
 												p.desk__iconName #{appNameMix}
