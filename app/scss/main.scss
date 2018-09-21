@@ -12,11 +12,13 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 .statusBar {
 	width: 100%;
 	height: 2vh;
 	background-color: yellow;
+	overflow: hidden;
 
 	.statusBar_button {
 		width: 100px;
@@ -222,5 +224,22 @@ body {
 				}
 			}
 		}
+	}
+}
+.controlPost {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 2vh;
+	background-color: #000;
+	overflow: hidden;
+
+	.controlPost__button {
+		width: 20%;
+		min-width: 140px;
+		height: 5px;
+		border-radius: 10px;
+		background-color: #fff;
 	}
 }
