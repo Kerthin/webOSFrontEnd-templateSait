@@ -96,6 +96,87 @@ html
 							+iconListCellMix('https://www.youtube.com', 'documents', 'Documents')
 							+iconListCellMix('https://www.youtube.com', 'downloads', 'Downloads')
 							+iconListCellMix('https://www.youtube.com', 'tips', 'Tips')
-		.controlPost
-			.controlPost__button
+		.controlPanel
+			.controlPanel__button
+		.controlPanelPopup
+			.controlPanelPopup__opacityLayer
+			.controlPanelPopup__header
+				i.fas.fa-angle-down
+			.controlPanelPopup__content
+				mixin controlPanelCircleIconsBoxMix(iconsBoxModificationClass, firstNameCircleIconMix, secondNameCircleIconMix, thirdNameCircleIconMix, fourthNameCircleIconMix)
+					.controlPanelPopup__contentItem
+						.controlPanelPopup__iconsBox(class=`${iconsBoxModificationClass}`)
+							.controlPanelPopup__circleIconWrap
+								.controlPanelPopup__circleIcon
+									i(class=`${firstNameCircleIconMix}`)
+							.controlPanelPopup__circleIconWrap
+								.controlPanelPopup__circleIcon
+									i(class=`${secondNameCircleIconMix}`)
+							.controlPanelPopup__circleIconWrap
+								.controlPanelPopup__circleIcon
+									i(class=`${thirdNameCircleIconMix}`)
+							.controlPanelPopup__circleIconWrap
+								.controlPanelPopup__circleIcon
+									i(class=`${fourthNameCircleIconMix}`)
+				mixin controlPanelSingleIconBoxMix(iconsBoxModificationClass)
+					.controlPanelPopup__contentItem
+						.controlPanelPopup__iconsBox(class=`${iconsBoxModificationClass}`)
+				mixin controlPanelTripleIconBoxMix(firstNameSquareIconMix, secondNameSquareIconMix, firstNameHorizontalIconMix)
+					.controlPanelPopup__contentItem
+						.controlPanelPopup__iconsBox
+							.controlPanelPopup__squareIcon
+								i(class=`${firstNameSquareIconMix}`)
+							.controlPanelPopup__squareIcon
+								i(class=`${secondNameSquareIconMix}`)
+							.controlPanelPopup__horizontalIcon
+								i(class=`${firstNameHorizontalIconMix}`)
+				mixin controlPanelVerticalIconBoxMix(firstNameVerticalIconMix, secondNameVerticalIconMix)
+					.controlPanelPopup__contentItem
+						.controlPanelPopup__iconsBox
+							.controlPanelPopup__verticalIcon
+								i(class=`${firstNameVerticalIconMix}`)
+							.controlPanelPopup__verticalIcon
+								i(class=`${secondNameVerticalIconMix}`)
+				mixin controlPanelQuadrupleIconBoxMix(firstNameSquareIconMix, secondNameSquareIconMix, thirdNameSquareIconMix, fourthNameSquareIconMix)
+					.controlPanelPopup__contentItem
+						.controlPanelPopup__iconsBox
+							.controlPanelPopup__squareIcon
+								i(class=`${firstNameSquareIconMix}`)
+							.controlPanelPopup__squareIcon
+								i(class=`${secondNameSquareIconMix}`)
+							.controlPanelPopup__squareIcon
+								i(class=`${thirdNameSquareIconMix}`)
+							.controlPanelPopup__squareIcon
+								i(class=`${fourthNameSquareIconMix}`)
+				mixin controlPanelHorizontalIconBoxMix(firstNameHorizontalIconMix, secondNameHorizontalIconMix)
+					.controlPanelPopup__contentItem
+						.controlPanelPopup__iconsBox
+							.controlPanelPopup__horizontalIcon
+								i(class=`${firstNameHorizontalIconMix}`)
+							.controlPanelPopup__horizontalIcon
+								i(class=`${secondNameHorizontalIconMix}`)
+				+controlPanelCircleIconsBoxMix('controlPanelPopup__iconsBox_borderRad controlPanelPopup__iconsBox_bg', 'fas fa-plane', 'fas fa-broadcast-tower', 'fas fa-wifi', 'fab fa-bluetooth-b')
+				+controlPanelSingleIconBoxMix('controlPanelPopup__iconsBox_borderRad controlPanelPopup__iconsBox_bg')
+				+controlPanelTripleIconBoxMix('fas fa-unlock', 'fas fa-moon', 'fas fa-desktop')
+				+controlPanelVerticalIconBoxMix('fas fa-sun', 'fas fa-volume-up')
+				+controlPanelQuadrupleIconBoxMix('fas fa-lightbulb', 'fas fa-map-marker-alt', 'fas fa-calculator', 'fas fa-camera')
+				+controlPanelQuadrupleIconBoxMix('far fa-image', 'far fa-clock', 'fab fa-apple', 'fas fa-car')
+				+controlPanelHorizontalIconBoxMix('fab fa-apple-pay', 'fab fa-cc-visa')
+				+controlPanelQuadrupleIconBoxMix('fas fa-search-plus', 'far fa-calendar-alt', 'far fa-dot-circle', 'fas fa-stopwatch')
+				+controlPanelQuadrupleIconBoxMix('fas fa-battery-half', 'fas fa-lock', 'fas fa-cloud', 'far fa-address-card')
+				+controlPanelQuadrupleIconBoxMix('far fa-edit', 'fas fa-fingerprint', 'fas fa-signal', 'fas fa-microphone')
+				+controlPanelQuadrupleIconBoxMix('fas fa-phone-slash', 'fas fa-comment', 'fas fa-video', 'fas fa-user')
+				+controlPanelQuadrupleIconBoxMix('fas fa-clone', 'fas fa-share-alt', 'fas fa-route', 'fas fa-gamepad')
+				+controlPanelVerticalIconBoxMix('fas fa-headphones-alt', 'fas fa-street-view')
+				+controlPanelTripleIconBoxMix('fas fa-cog', 'fab fa-accusoft', 'fas fa-bezier-curve')
+				+controlPanelQuadrupleIconBoxMix('fas fa-project-diagram', 'fas fa-bed', 'fas fa-database', 'fas fa-dna')
+				+controlPanelQuadrupleIconBoxMix('fas fa-euro-sign', 'fab fa-fly', 'fas fa-folder', 'fab fa-google-drive')
+				+controlPanelQuadrupleIconBoxMix('fas fa-layer-group', 'fas fa-solar-panel', 'fas fa-tablet', 'fas fa-assistive-listening-systems')
+				+controlPanelHorizontalIconBoxMix('fas fa-braille', 'fab fa-btc')
+				+controlPanelTripleIconBoxMix('fas fa-chart-pie', 'fab fa-hubspot', 'fas fa-inbox')
+				+controlPanelQuadrupleIconBoxMix('fab fa-itunes-note', 'fas fa-pills', 'fas fa-podcast', 'fas fa-shield-alt')
+				+controlPanelQuadrupleIconBoxMix('fab fa-staylinked', 'fas fa-th-list', 'fas fa-cubes', 'fab fa-nintendo-switch')
+				+controlPanelVerticalIconBoxMix('fas fa-thermometer-full', 'fas fa-tint')
+				+controlPanelQuadrupleIconBoxMix('fas fa-signal', 'fas fa-sliders-h', 'fab fa-soundcloud', 'fas fa-fire')
+				+controlPanelQuadrupleIconBoxMix('fas fa-hdd', 'fas fa-laptop', 'fas fa-mobile-alt', 'far fa-save')
 		include template/scripts.pug

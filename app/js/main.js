@@ -29,6 +29,11 @@
 //= partials/dragSwitch.js
 
 /********************
+	controlPanelScripts.js
+********************/
+//= partials/controlPanelScripts.js
+
+/********************
 	animsitionInitializationMainPage.js
 ********************/
 //= partials/animsitionInitializationMainPage.js
