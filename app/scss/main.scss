@@ -270,6 +270,11 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		.fa-angle-down {
+			font-size: 45px;
+			color: #203846;
+		}
 	}
 
 	.controlPanelPopup__content {
@@ -321,6 +326,7 @@ body {
 						.fas,
 						.far,
 						.fab {
+							font-size: 25px;
 							color: #fff;
 						}
 					}
@@ -359,6 +365,7 @@ body {
 					.fas,
 					.far,
 					.fab {
+						font-size: 25px;
 						color: #fff;
 					}
 				}
@@ -386,6 +393,7 @@ body {
 					.fas,
 					.far,
 					.fab {
+						font-size: 25px;
 						color: #fff;
 						margin-bottom: 20px; 
 					}
@@ -414,6 +422,7 @@ body {
 					.fas,
 					.far,
 					.fab {
+						font-size: 25px;
 						color: #fff;
 					}
 				}
