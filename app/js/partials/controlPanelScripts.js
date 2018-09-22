@@ -10,5 +10,13 @@ $(document).ready(function(){
 	closeControlPanelButton.click(function(){
 		controlPanelPopupActive.removeClass('controlPanelPopup_active');
 	});
+
+	var swiperSlide = $('.swiper-slide'),
+		dragUnlockButton = $('.js-controlPanelPopup__dragButton');
+
+	dragUnlockButton.on('click', function () {
+		// $(this).toggleClass('js-controlPanelPopup__dragButton_active');
+		$(swiperSlide).toggleClass('falseSwiping');
+	});
 	
 });

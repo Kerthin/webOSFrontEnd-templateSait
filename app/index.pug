@@ -121,10 +121,10 @@ html
 				mixin controlPanelSingleIconBoxMix(iconsBoxModificationClass)
 					.controlPanelPopup__contentItem
 						.controlPanelPopup__iconsBox(class=`${iconsBoxModificationClass}`)
-				mixin controlPanelTripleIconBoxMix(firstNameSquareIconMix, secondNameSquareIconMix, firstNameHorizontalIconMix)
+				mixin controlPanelTripleIconBoxMix(firstNameSquareIconMix, secondNameSquareIconMix, firstNameHorizontalIconMix, firstSquareIconClassMix)
 					.controlPanelPopup__contentItem
 						.controlPanelPopup__iconsBox
-							.controlPanelPopup__squareIcon
+							.controlPanelPopup__squareIcon(class=`${firstSquareIconClassMix}`)
 								i(class=`${firstNameSquareIconMix}`)
 							.controlPanelPopup__squareIcon
 								i(class=`${secondNameSquareIconMix}`)
@@ -157,7 +157,7 @@ html
 								i(class=`${secondNameHorizontalIconMix}`)
 				+controlPanelCircleIconsBoxMix('controlPanelPopup__iconsBox_borderRad controlPanelPopup__iconsBox_bg', 'fas fa-plane', 'fas fa-broadcast-tower', 'fas fa-wifi', 'fab fa-bluetooth-b')
 				+controlPanelSingleIconBoxMix('controlPanelPopup__iconsBox_borderRad controlPanelPopup__iconsBox_bg')
-				+controlPanelTripleIconBoxMix('fas fa-unlock', 'fas fa-moon', 'fas fa-desktop')
+				+controlPanelTripleIconBoxMix('fas fa-unlock', 'fas fa-moon', 'fas fa-desktop', 'js-controlPanelPopup__dragButton')
 				+controlPanelVerticalIconBoxMix('fas fa-sun', 'fas fa-volume-up')
 				+controlPanelQuadrupleIconBoxMix('fas fa-lightbulb', 'fas fa-map-marker-alt', 'fas fa-calculator', 'fas fa-camera')
 				+controlPanelQuadrupleIconBoxMix('far fa-image', 'far fa-clock', 'fab fa-apple', 'fas fa-car')
