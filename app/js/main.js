@@ -24,11 +24,6 @@
 //= partials/swiperInitializations.js
 
 /********************
-	dragSwitch.js
-********************/
-//= partials/dragSwitch.js
-
-/********************
 	controlPanelScripts.js
 ********************/
 //= partials/controlPanelScripts.js
