@@ -12,6 +12,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 .statusBar {
 	width: 100%;
@@ -249,7 +250,7 @@ body {
 	height: 100vh;
 	bottom: -100vh;
 	z-index: 2;
-	transition: all 0.5s;
+	transition: all .7s;
 
 	&_active	{
 		bottom: 0%;
@@ -260,7 +261,7 @@ body {
 		width: 100%;
 		height: 100vh;
 		background-color: #dadadc;
-		opacity: 0.9;
+		opacity: .9;
 	}
 
 	.controlPanelPopup__header {
@@ -274,6 +275,7 @@ body {
 		.fa-angle-down {
 			font-size: 45px;
 			color: #203846;
+			cursor: pointer;
 		}
 	}
 
@@ -316,7 +318,7 @@ body {
 						width: 58px;
 						height: 58px;
 						background-color: #555d68;
-						opacity: 0.9;
+						opacity: .9;
 						border-radius: 50%;
 						display: flex;
 						justify-content: center;
@@ -340,7 +342,7 @@ body {
 					height: 72px;
 					border-radius: 11px;
 					background-color: #203846;
-					opacity: 0.9;
+					opacity: .9;
 					position: relative;
 					cursor: pointer;
 
@@ -379,7 +381,7 @@ body {
 					height: 100%;
 					border-radius: 11px;
 					background-color: #203846;
-					opacity: 0.9;
+					opacity: .9;
 					cursor: pointer;
 
 					&:nth-of-type(1) {
@@ -408,7 +410,7 @@ body {
 					height: 72px;
 					border-radius: 11px;
 					background-color: #203846;
-					opacity: 0.9;
+					opacity: .9;
 					cursor: pointer;
 
 					&_mgTop {

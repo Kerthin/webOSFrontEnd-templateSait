@@ -1,9 +1,14 @@
 $(document).ready(function(){
-	var callControlPanelButtton = $('.controlPanel'),
+	var callControlPanelButton = $('.controlPanel'),
+		closeControlPanelButton = $('.controlPanelPopup__closeButton'),
 		controlPanelPopupActive	= $('.controlPanelPopup');
 
-	callControlPanelButtton.click(function(){
+	callControlPanelButton.click(function(){
 		controlPanelPopupActive.addClass('controlPanelPopup_active');
+	});
+
+	closeControlPanelButton.click(function(){
+		controlPanelPopupActive.removeClass('controlPanelPopup_active');
 	});
 	
 });
