@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var callControlPanelButtton = $('.controlPanel__button'),
+	var callControlPanelButtton = $('.controlPanel'),
 		controlPanelPopupActive	= $('.controlPanelPopup');
 
 	callControlPanelButtton.click(function(){
