@@ -490,6 +490,7 @@ body {
 				width: 98%;
 				height: 98%;
 				margin: 1%;
+				background-color: red;
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -503,6 +504,11 @@ body {
 					}
 				}
 			}
+		}
+
+		@media screen and (max-width: 494px) {
+			width: 100%;
+			margin: 10vh 0 0;
 		}
 	}
 }
