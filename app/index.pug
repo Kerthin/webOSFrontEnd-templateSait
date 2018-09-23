@@ -2,6 +2,12 @@ html
 	head
 		include template/head.pug
 	body.animsition-overlay._bg_shore4(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800")
+		.preloader
+			- var x = 4;
+			.preloader__load
+				- for (var i=1; i<=x; i++) {
+					span.preloader__dot
+				- }
 		.statusBar
 			.statusBar_button
 		.swiper-container
