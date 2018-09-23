@@ -1,7 +1,7 @@
 html
 	head
 		include template/head.pug
-	body.animsition-overlay.animsition-overlay_bg_shore4(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800")
+	body.animsition-overlay._bg_shore4(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800")
 		.statusBar
 			.statusBar_button
 		.swiper-container
@@ -185,7 +185,7 @@ html
 			.imgChoicePopup__content
 				mixin imgChoiceItemMix(imgChoiceBgImgMix)
 					.imgChoicePopup__contentItem
-						.imgChoicePopup__img(class=`imgChoicePopup__img_bg_${imgChoiceBgImgMix}`)
+						.imgChoicePopup__img(class=`_bg_${imgChoiceBgImgMix}`)
 				+imgChoiceItemMix('abstraction1')
 				+imgChoiceItemMix('abstraction2')
 				+imgChoiceItemMix('abstraction3')

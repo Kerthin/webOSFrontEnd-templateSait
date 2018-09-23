@@ -12,10 +12,6 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	overflow: hidden;
-
-	&.animsition-overlay_bg_shore4 {
-		background-image: url('../image/bgImgDesk/shore4.jpg');
-	}
 }
 .statusBar {
 	width: 100%;
@@ -242,7 +238,7 @@ body {
 	.controlPanel__button {
 		width: 20%;
 		min-width: 140px;
-		height: 5px;
+		height: 4px;
 		border-radius: 10px;
 		background-color: #fff;
 	}
@@ -481,55 +477,6 @@ body {
 			width: 110px;
 			height: 230px;
 
-			$namesBgImgArray: (
-					abstraction1,
-					abstraction2,
-					abstraction3,
-					abstraction4,
-					abstraction5,
-					abstraction6,
-					desert,
-					eyedrops1,
-					eyedrops2,
-					eyedrops3,
-					fish1,
-					fish2,
-					fish3,
-					fish4,
-					fish5,
-					flower1,
-					flower2,
-					flower3,
-					galaxy,
-					inkBlast1,
-					inkBlast2,
-					inkBlast3,
-					inkBlast4,
-					inkBlast5,
-					inkBlast6,
-					moon,
-					mountain1,
-					mountain2,
-					rainbow1,
-					rainbow2,
-					rainbowBlur1,
-					rainbowBlur2,
-					rainbowBlur3,
-					rainbowBlur4,
-					rainbowBlur5,
-					rainbowHair,
-					shore1,
-					shore2,
-					shore3,
-					shore4,
-					wave1,
-					wave2,
-					wave3,
-					wave4,
-					wave5,
-					wave6
-				);
-
 			.imgChoicePopup__img {
 				width: 98%;
 				height: 98%;
@@ -539,14 +486,6 @@ body {
 				background-position: center;
 				background-repeat: no-repeat;
 				cursor: pointer;
-
-				$bgImgPath : "../image/bgImgDesk";
-				
-				@each $imgName in $namesBgImgArray {
-					&_bg_#{$imgName} {
-						background-image: url(#{$bgImgPath}/#{$imgName}.jpg);
-					}
-				}
 			}
 		}
 
@@ -554,5 +493,60 @@ body {
 			width: 100%;
 			margin: 10vh 0 0;
 		}
+	}
+}
+$namesBgImgArray: (
+	abstraction1,
+	abstraction2,
+	abstraction3,
+	abstraction4,
+	abstraction5,
+	abstraction6,
+	desert,
+	eyedrops1,
+	eyedrops2,
+	eyedrops3,
+	fish1,
+	fish2,
+	fish3,
+	fish4,
+	fish5,
+	flower1,
+	flower2,
+	flower3,
+	galaxy,
+	inkBlast1,
+	inkBlast2,
+	inkBlast3,
+	inkBlast4,
+	inkBlast5,
+	inkBlast6,
+	moon,
+	mountain1,
+	mountain2,
+	rainbow1,
+	rainbow2,
+	rainbowBlur1,
+	rainbowBlur2,
+	rainbowBlur3,
+	rainbowBlur4,
+	rainbowBlur5,
+	rainbowHair,
+	shore1,
+	shore2,
+	shore3,
+	shore4,
+	wave1,
+	wave2,
+	wave3,
+	wave4,
+	wave5,
+	wave6
+);
+$bgImgPath : "../image/bgImgDesk";
+				
+@each $imgName in $namesBgImgArray {
+	._bg_#{$imgName} {
+		background-image: url(#{$bgImgPath}/#{$imgName}.jpg);
 	}
 }

@@ -31,13 +31,17 @@ $(document).ready(function(){
 		imgChoicePopupActive.removeClass('imgChoicePopup_active');
 	});
 
-	// var animsitionBody = $('.animsition-overlay');
-	// var statusBarButton = $('.statusBar_button');
+	var animsitionOverlay = $('.animsition-overlay');
 
-	// animsitionBody.on('click', function () {
-	// 	$(this).removeClass();
-	// 	$(this).addClass('animsition-overlay');
-	// 	$(this).addClass('lookingGood');
-	// }); 
+	var imgChoiceBg = $('.imgChoicePopup__img');
+
+	imgChoiceBg.click(function(){
+		var thisImg = $(this);
+		var thisImgClasses = thisImg.attr('class').split(' ');
+		var thisImgSecondClass = thisImgClasses[1];
+		$(animsitionOverlay).removeClass();
+		$(animsitionOverlay).addClass('animsition-overlay');
+		$(animsitionOverlay).addClass(thisImgSecondClass);
+	});
 	
 });
