@@ -437,3 +437,72 @@ body {
 		}
 	}
 }
+.imgChoicePopup {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	bottom: -100vh;
+	background-color: #fff;
+	z-index: 3;
+	transition: all .7s;
+
+	&_active	{
+		bottom: 0%;
+	}
+
+	.imgChoicePopup__header {
+		position: absolute;
+		width: 100%;
+		height: 10vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.fa-angle-down {
+			font-size: 45px;
+			color: #203846;
+			cursor: pointer;
+		}
+	}
+
+	.imgChoicePopup__content {
+		position: absolute;
+		width: 80%;
+		height: 90vh;
+		margin: 10vh 10% 0;
+		text-align: center;
+		overflow: scroll;
+
+		.imgChoicePopup__contentItem {
+			display: inline-block;
+			width: 110px;
+			height: 230px;
+
+			$namesBgImgArray: (
+					first,
+					second,
+					third,
+					fourth,
+					fifth
+				);
+
+			.imgChoicePopup__img {
+				width: 98%;
+				height: 98%;
+				margin: 1%;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				cursor: pointer;
+
+				$bgImgPath : "../image";
+				
+				@each $imgName in $namesBgImgArray {
+					&_bg_#{$imgName} {
+						background-image: url(#{$bgImgPath}/#{$imgName}.jpg);
+					}
+				}
+			}
+		}
+	}
+}

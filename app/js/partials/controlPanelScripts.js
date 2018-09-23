@@ -18,5 +18,26 @@ $(document).ready(function(){
 		// $(this).toggleClass('js-controlPanelPopup__dragButton_active');
 		$(swiperSlide).toggleClass('falseSwiping');
 	});
+
+	var callImgChoiceButton = $('.js-controlPanelPopup__imgChoiceButton'),
+		closeImgChoiceButton = $('.imgChoicePopup__closeButton'),
+		imgChoicePopupActive = $('.imgChoicePopup');
+
+	callImgChoiceButton.click(function(){
+		imgChoicePopupActive.addClass('imgChoicePopup_active');
+	});
+
+	closeImgChoiceButton.click(function(){
+		imgChoicePopupActive.removeClass('imgChoicePopup_active');
+	});
+
+	// var animsitionBody = $('.animsition-overlay');
+	// var statusBarButton = $('.statusBar_button');
+
+	// animsitionBody.on('click', function () {
+	// 	$(this).removeClass();
+	// 	$(this).addClass('animsition-overlay');
+	// 	$(this).addClass('lookingGood');
+	// }); 
 	
 });

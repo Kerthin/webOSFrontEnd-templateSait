@@ -1,7 +1,7 @@
 html
 	head
 		include template/head.pug
-	body.animsition-overlay(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800")
+	body.animsition-overlay.daSuka(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800")
 		.statusBar
 			.statusBar_button
 		.swiper-container
@@ -137,10 +137,10 @@ html
 								i(class=`${firstNameVerticalIconMix}`)
 							.controlPanelPopup__verticalIcon
 								i(class=`${secondNameVerticalIconMix}`)
-				mixin controlPanelQuadrupleIconBoxMix(firstNameSquareIconMix, secondNameSquareIconMix, thirdNameSquareIconMix, fourthNameSquareIconMix)
+				mixin controlPanelQuadrupleIconBoxMix(firstNameSquareIconMix, secondNameSquareIconMix, thirdNameSquareIconMix, fourthNameSquareIconMix, firstSquareIconClassMix)
 					.controlPanelPopup__contentItem
 						.controlPanelPopup__iconsBox
-							.controlPanelPopup__squareIcon
+							.controlPanelPopup__squareIcon(class=`${firstSquareIconClassMix}`)
 								i(class=`${firstNameSquareIconMix}`)
 							.controlPanelPopup__squareIcon
 								i(class=`${secondNameSquareIconMix}`)
@@ -160,7 +160,7 @@ html
 				+controlPanelTripleIconBoxMix('fas fa-unlock', 'fas fa-moon', 'fas fa-desktop', 'js-controlPanelPopup__dragButton')
 				+controlPanelVerticalIconBoxMix('fas fa-sun', 'fas fa-volume-up')
 				+controlPanelQuadrupleIconBoxMix('fas fa-lightbulb', 'fas fa-map-marker-alt', 'fas fa-calculator', 'fas fa-camera')
-				+controlPanelQuadrupleIconBoxMix('far fa-image', 'far fa-clock', 'fab fa-apple', 'fas fa-car')
+				+controlPanelQuadrupleIconBoxMix('far fa-image', 'far fa-clock', 'fab fa-apple', 'fas fa-car', 'js-controlPanelPopup__imgChoiceButton')
 				+controlPanelHorizontalIconBoxMix('fab fa-apple-pay', 'fab fa-cc-visa')
 				+controlPanelQuadrupleIconBoxMix('fas fa-search-plus', 'far fa-calendar-alt', 'far fa-dot-circle', 'fas fa-stopwatch')
 				+controlPanelQuadrupleIconBoxMix('fas fa-battery-half', 'fas fa-lock', 'fas fa-cloud', 'far fa-address-card')
@@ -179,4 +179,57 @@ html
 				+controlPanelVerticalIconBoxMix('fas fa-thermometer-full', 'fas fa-tint')
 				+controlPanelQuadrupleIconBoxMix('fas fa-signal', 'fas fa-sliders-h', 'fab fa-soundcloud', 'fas fa-fire')
 				+controlPanelQuadrupleIconBoxMix('fas fa-hdd', 'fas fa-laptop', 'fas fa-mobile-alt', 'far fa-save')
+		.imgChoicePopup
+			.imgChoicePopup__header
+				i.fas.fa-angle-down.imgChoicePopup__closeButton
+			.imgChoicePopup__content
+				mixin imgChoiceItemMix(imgChoiceBgImgMix)
+					.imgChoicePopup__contentItem
+						.imgChoicePopup__img(class=`imgChoicePopup__img_bg_${imgChoiceBgImgMix}`)
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
+				+imgChoiceItemMix('')
 		include template/scripts.pug
