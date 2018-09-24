@@ -70,14 +70,12 @@ body {
 	display: flex;
 	width: 100%;
 	height: 2vh;
-	background-color: yellow;
 	overflow: hidden;
 
 	.statusBar__network {
 		display: flex;
 		width: 130px;
 		height: 100%;
-		background-color: red;
 
 		.statusBar__cellularWrap {
 			display: flex;
@@ -85,7 +83,6 @@ body {
 			align-items: center;
 			width: 70px;
 			height: 100%;
-			background-color: yellow;
 
 			.fas {
 				font-size: 12px;
@@ -99,7 +96,6 @@ body {
 			align-items: center;
 			width: 30px;
 			height: 100%;
-			background-color: green;
 
 			.statusBar__cellularName {
 				font-family: 'Roboto', sans-serif;
@@ -114,7 +110,6 @@ body {
 			align-items: center;
 			width: 30px;
 			height: 100%;
-			background-color: blue;
 
 			.fas {
 				font-size: 14px;
@@ -129,7 +124,6 @@ body {
 		align-items: center;
 		flex: 1;
 		height: 100%;
-		background-color: pink;
 
 		.statusBar__time {
 			font-family: 'Roboto', sans-serif;
@@ -142,7 +136,6 @@ body {
 		display: flex;
 		width: 130px;
 		height: 100%;
-		background-color: gray;
 
 		.statusBar__batteryWrap {
 			display: flex;
@@ -150,7 +143,6 @@ body {
 			align-items: center;
 			width: 40px;
 			height: 100%;
-			background-color: pink;
 
 			.fas {
 				font-size: 16px;
@@ -164,7 +156,6 @@ body {
 			align-items: center;
 			width: 90px;
 			height: 100%;
-			background-color: orange;
 
 			.statusBar__chargeDigit {
 				font-family: 'Roboto', sans-serif;
@@ -394,7 +385,6 @@ body {
 	align-items: center;
 	width: 100%;
 	height: 2vh;
-	background-color: #000;
 	overflow: hidden;
 	cursor: pointer;
 
