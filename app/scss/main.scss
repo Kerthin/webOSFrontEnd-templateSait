@@ -125,13 +125,15 @@ body {
 
 	.statusBar__timeWrap {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex: 1;
 		height: 100%;
 		background-color: pink;
 
 		.statusBar__time {
 			font-family: 'Roboto', sans-serif;
-			font-size: 12px;
+			font-size: 14px;
 			color: #fff;
 		}
 	}

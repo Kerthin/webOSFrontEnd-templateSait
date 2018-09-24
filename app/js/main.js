@@ -29,6 +29,11 @@
 //= partials/preloader.js
 
 /********************
+	timeDisplay.js
+********************/
+//= partials/timeDisplay.js
+
+/********************
 	controlPanelScripts.js
 ********************/
 //= partials/controlPanelScripts.js
