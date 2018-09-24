@@ -22,6 +22,8 @@ html
 			.statusBar__timeWrap
 				p#timeDisplay.statusBar__time
 			.statusBar__charge
+				#fullscreenStatusBarButton.statusBar__fullscreenWrap
+					i.fas.fa-arrows-alt
 				.statusBar__chargeDigitWrap
 					p#chargeDigitDisplay.statusBar__chargeDigit 83%
 				.statusBar__batteryWrap
@@ -117,7 +119,7 @@ html
 							+iconListCellMix('https://www.youtube.com', 'user', 'User')
 							+iconListCellMix('https://www.youtube.com', 'documents', 'Documents')
 							+iconListCellMix('https://www.youtube.com', 'downloads', 'Downloads')
-							+iconListCellMix('https://www.youtube.com', 'tips', 'Tips')
+							+iconListCellMix('', 'tips', 'Tips')
 		.controlPanel
 			.controlPanel__button
 		.controlPanelPopup
@@ -143,14 +145,14 @@ html
 				mixin controlPanelSingleIconBoxMix(iconsBoxModificationClass)
 					.controlPanelPopup__contentItem
 						.controlPanelPopup__iconsBox(class=`${iconsBoxModificationClass}`)
-				mixin controlPanelTripleIconBoxMix(firstNameSquareIconMix, secondNameSquareIconMix, firstNameHorizontalIconMix, firstSquareIconClassMix)
+				mixin controlPanelTripleIconBoxMix(firstNameSquareIconMix, secondNameSquareIconMix, firstNameHorizontalIconMix, firstSquareIconClassMix, secondSquareIconClassMix, firstHorizontalIconClassMix)
 					.controlPanelPopup__contentItem
 						.controlPanelPopup__iconsBox
 							.controlPanelPopup__squareIcon(class=`${firstSquareIconClassMix}`)
 								i(class=`${firstNameSquareIconMix}`)
-							.controlPanelPopup__squareIcon
+							.controlPanelPopup__squareIcon(class=`${secondSquareIconClassMix}`)
 								i(class=`${secondNameSquareIconMix}`)
-							.controlPanelPopup__horizontalIcon.controlPanelPopup__horizontalIcon_mgTop
+							.controlPanelPopup__horizontalIcon.controlPanelPopup__horizontalIcon_mgTop(class=`${firstHorizontalIconClassMix}`)
 								i(class=`${firstNameHorizontalIconMix}`)
 				mixin controlPanelVerticalIconBoxMix(firstNameVerticalIconMix, secondNameVerticalIconMix)
 					.controlPanelPopup__contentItem
@@ -179,7 +181,7 @@ html
 								i(class=`${secondNameHorizontalIconMix}`)
 				+controlPanelCircleIconsBoxMix('controlPanelPopup__iconsBox_borderRad controlPanelPopup__iconsBox_bg', 'fas fa-plane', 'fas fa-broadcast-tower', 'fas fa-wifi', 'fab fa-bluetooth-b')
 				+controlPanelSingleIconBoxMix('controlPanelPopup__iconsBox_borderRad controlPanelPopup__iconsBox_bg')
-				+controlPanelTripleIconBoxMix('fas fa-unlock', 'fas fa-moon', 'fas fa-desktop', 'js-controlPanelPopup__dragButton')
+				+controlPanelTripleIconBoxMix('fas fa-unlock', 'fas fa-moon', 'fas fa-desktop', 'js-controlPanelPopup__dragButton', '', 'js-controlPanelPopup__fullscreenButton')
 				+controlPanelVerticalIconBoxMix('fas fa-sun', 'fas fa-volume-up')
 				+controlPanelQuadrupleIconBoxMix('fas fa-lightbulb', 'fas fa-map-marker-alt', 'fas fa-calculator', 'fas fa-camera')
 				+controlPanelQuadrupleIconBoxMix('far fa-image', 'far fa-clock', 'fab fa-apple', 'fas fa-car', 'js-controlPanelPopup__imgChoiceButton')

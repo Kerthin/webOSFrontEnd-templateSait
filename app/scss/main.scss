@@ -64,6 +64,7 @@ body {
 	&.preloader_hide {
 		opacity: 0;
 		visibility: hidden;
+		top: -100vh;
 	}
 }
 .statusBar {
@@ -134,8 +135,23 @@ body {
 
 	.statusBar__charge {
 		display: flex;
+		justify-content: flex-end;
 		width: 130px;
 		height: 100%;
+
+		.statusBar__fullscreenWrap {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 100%;
+			cursor: pointer;
+
+			.fas {
+				font-size: 16px;
+				color: #fff;
+			}
+		}
 
 		.statusBar__batteryWrap {
 			display: flex;
@@ -152,9 +168,9 @@ body {
 
 		.statusBar__chargeDigitWrap {
 			display: flex;
-			justify-content: flex-end;
+			justify-content: center;
 			align-items: center;
-			width: 90px;
+			width: 35px;
 			height: 100%;
 
 			.statusBar__chargeDigit {
