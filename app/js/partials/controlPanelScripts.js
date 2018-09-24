@@ -50,9 +50,8 @@ $(document).ready(function(){
 		callImgChoiceButton.toggleClass('controlPanelPopup__squareIcon_selected');
 	});
 
-	var animsitionOverlay = $('.animsition-overlay');
-
-	var imgChoiceBg = $('.imgChoicePopup__img');
+	var animsitionOverlay = $('.animsition-overlay'),
+		imgChoiceBg = $('.imgChoicePopup__img');
 
 	imgChoiceBg.click(function() {
 		var thisImg = $(this);
@@ -61,6 +60,15 @@ $(document).ready(function(){
 		$(animsitionOverlay).removeClass();
 		$(animsitionOverlay).addClass('animsition-overlay');
 		$(animsitionOverlay).addClass(thisImgSecondClass);
+	});
+
+	var deleteNameAppButton = $('.js-controlPanelPopup__delNameButton'),
+		nameApp = $('.desk__iconNameWrap'),
+		iconWrap = $('.desk__iconWrap');
+
+	deleteNameAppButton.click(function() {
+		$(nameApp).toggleClass('desk__iconNameWrap_deleted');
+		$(iconWrap).toggleClass('desk__iconWrap_size_icon');
 	});
 	
 });
