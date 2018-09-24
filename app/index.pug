@@ -9,7 +9,23 @@ html
 					span.preloader__dot
 				- }
 		.statusBar
-			.statusBar_button
+			.statusBar__network
+				- var x = 5;
+				.statusBar__cellularWrap
+					- for (var i=1; i<=x; i++) {
+						i.fas.fa-circle
+					- }
+				.statusBar__cellularNameWrap
+					p.statusBar__cellularName AT&T
+				.statusBar__wifiWrap
+					i.fas.fa-wifi
+			.statusBar__timeWrap
+				p#timeDisplat.statusBar__time
+			.statusBar__charge
+				.statusBar__batteryWrap
+					i.fas.fa-battery-full
+				.statusBar__chargeDigitWrap
+					p#chargeDigitDisplay.statusBar__chargeDigit
 		.swiper-container
 			.swiper-wrapper
 				#firstDragSlide.swiper-slide
