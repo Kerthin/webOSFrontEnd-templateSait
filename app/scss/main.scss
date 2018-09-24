@@ -1,6 +1,38 @@
 @import '../../bower_components/reset.scss/reset.scss';
 @import 'partials/libs/swiper.min.scss';
 @import 'partials/libs/animsition.min.scss';
+
+/********************
+	# Variables
+********************/
+
+/********************
+	## Colors
+********************/
+
+$firstDotColorPreloader: #19A68C;
+$secondDotColorPreloader: #F63D3A;
+$thirdDotColorPreloader: #FDA543;
+$fourthDotColorPreloader: #193B48;
+
+$statusBarColorElements: #fff;
+
+/********************
+	## Fonts
+********************/
+
+$statusBarFontElements: 'Roboto', sans-serif;
+
+/********************
+	# Extends
+********************/
+
+%centralPositioning {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 ::-webkit-scrollbar {
 	width: 0;
 }
@@ -43,19 +75,19 @@ body {
 			animation: preloaderSpin 2s ease infinite;
 
 			&:nth-child(1) {
-				background-color: #19A68C;
+				background-color: $firstDotColorPreloader;
 				animation-delay: -2s;
 			}
 			&:nth-child(2) {
-				background-color: #F63D3A;
+				background-color: $secondDotColorPreloader;
 				animation-delay: -1.5s;
 			}
 			&:nth-child(3) {
-				background-color: #FDA543;
+				background-color: $thirdDotColorPreloader;
 				animation-delay: -1s;
 			}
 			&:nth-child(4) {
-				background-color: #193B48;
+				background-color: $fourthDotColorPreloader;
 				animation-delay: -.5s;
 			}
 		}
@@ -79,15 +111,13 @@ body {
 		height: 100%;
 
 		.statusBar__cellularWrap {
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			@extend %centralPositioning;
 			width: 70px;
 			height: 100%;
 
 			.fas {
 				font-size: 12px;
-				color: #fff;
+				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
 					font-size: 10px;
@@ -100,16 +130,14 @@ body {
 		}
 
 		.statusBar__cellularNameWrap {
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			@extend %centralPositioning;
 			width: 30px;
 			height: 100%;
 
 			.statusBar__cellularName {
-				font-family: 'Roboto', sans-serif;
+				font-family: $statusBarFontElements;
 				font-size: 12px;
-				color: #fff;
+				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
 					font-size: 10px;
@@ -122,15 +150,13 @@ body {
 		}
 
 		.statusBar__wifiWrap {
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			@extend %centralPositioning;
 			width: 30px;
 			height: 100%;
 
 			.fas {
 				font-size: 14px;
-				color: #fff;
+				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
 					font-size: 12px;
@@ -144,16 +170,14 @@ body {
 	}
 
 	.statusBar__timeWrap {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@extend %centralPositioning;
 		flex: 1;
 		height: 100%;
 
 		.statusBar__time {
-			font-family: 'Roboto', sans-serif;
+			font-family: $statusBarFontElements;
 			font-size: 14px;
-			color: #fff;
+			color: $statusBarColorElements;
 
 			@media screen and (max-width: 494px) {
 				font-size: 12px;
@@ -172,16 +196,14 @@ body {
 		height: 100%;
 
 		.statusBar__fullscreenWrap {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 40px;
+			@extend %centralPositioning;
+			width: 30px;
 			height: 100%;
 			cursor: pointer;
 
 			.fas {
 				font-size: 16px;
-				color: #fff;
+				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
 					font-size: 12px;
@@ -194,15 +216,13 @@ body {
 		}
 
 		.statusBar__batteryWrap {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 40px;
+			@extend %centralPositioning;
+			width: 30px;
 			height: 100%;
 
 			.fas {
 				font-size: 16px;
-				color: #fff;
+				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
 					font-size: 12px;
@@ -215,16 +235,14 @@ body {
 		}
 
 		.statusBar__chargeDigitWrap {
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			@extend %centralPositioning;
 			width: 35px;
 			height: 100%;
 
 			.statusBar__chargeDigit {
-				font-family: 'Roboto', sans-serif;
+				font-family: $statusBarFontElements;
 				font-size: 14px;
-				color: #fff;
+				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
 					font-size: 12px;
