@@ -24,6 +24,11 @@
 //= partials/swiperInitializations.js
 
 /********************
+	preloader.js
+********************/
+//= partials/preloader.js
+
+/********************
 	controlPanelScripts.js
 ********************/
 //= partials/controlPanelScripts.js

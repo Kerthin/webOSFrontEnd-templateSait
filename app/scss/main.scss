@@ -20,7 +20,10 @@ body {
 	top: 0;
 	position: fixed;
 	background-color: #fff;
-	z-index: 5;
+	z-index: 9999;
+	transition: all .9s;
+	opacity: 1;
+	visibility: visible;
 
 	.preloader__load {
 		position: absolute;
@@ -41,20 +44,26 @@ body {
 
 			&:nth-child(1) {
 				background-color: #19A68C;
-				animation-delay: -1.5s;
+				animation-delay: -2s;
 			}
 			&:nth-child(2) {
 				background-color: #F63D3A;
-				animation-delay: -1s;
+				animation-delay: -1.5s;
 			}
 			&:nth-child(3) {
 				background-color: #FDA543;
-				animation-delay: -.5s;
+				animation-delay: -1s;
 			}
 			&:nth-child(4) {
 				background-color: #193B48;
+				animation-delay: -.5s;
 			}
 		}
+	}
+
+	&.preloader_hide {
+		opacity: 0;
+		visibility: hidden;
 	}
 }
 .statusBar {

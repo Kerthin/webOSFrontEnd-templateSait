@@ -2,7 +2,7 @@ html
 	head
 		include template/head.pug
 	body.animsition-overlay._bg_shore4(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800")
-		.preloader
+		#pagePreloader.preloader
 			- var x = 4;
 			.preloader__load
 				- for (var i=1; i<=x; i++) {
@@ -169,7 +169,7 @@ html
 				+controlPanelQuadrupleIconBoxMix('far fa-image', 'far fa-clock', 'fab fa-apple', 'fas fa-car', 'js-controlPanelPopup__imgChoiceButton')
 				+controlPanelHorizontalIconBoxMix('fab fa-apple-pay', 'fab fa-cc-visa')
 				+controlPanelQuadrupleIconBoxMix('fas fa-search-plus', 'far fa-calendar-alt', 'far fa-dot-circle', 'fas fa-stopwatch')
-				+controlPanelQuadrupleIconBoxMix('fas fa-battery-half', 'fas fa-lock', 'fas fa-cloud', 'far fa-address-card')
+				+controlPanelQuadrupleIconBoxMix('fas fa-battery-half', 'fas fa-globe', 'fas fa-cloud', 'far fa-address-card')
 				+controlPanelQuadrupleIconBoxMix('far fa-edit', 'fas fa-fingerprint', 'fas fa-signal', 'fas fa-microphone')
 				+controlPanelQuadrupleIconBoxMix('fas fa-phone-slash', 'fas fa-comment', 'fas fa-video', 'fas fa-user')
 				+controlPanelQuadrupleIconBoxMix('fas fa-clone', 'fas fa-share-alt', 'fas fa-route', 'fas fa-gamepad')
