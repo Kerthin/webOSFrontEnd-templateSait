@@ -377,6 +377,16 @@ body {
 						align-items: center;
 						cursor: pointer;
 
+						&_selected {
+							background-color: #fff;
+
+							.fas,
+							.far,
+							.fab {
+								color: #555d68 !important;
+							}
+						}
+
 						.fas,
 						.far,
 						.fab {
@@ -416,6 +426,16 @@ body {
 						margin-top: 11px;
 					}
 
+					&_selected {
+						background-color: #fff;
+
+						.fas,
+						.far,
+						.fab {
+							color: #555d68 !important;
+						}
+					}
+
 					.fas,
 					.far,
 					.fab {
@@ -442,6 +462,16 @@ body {
 
 					&:nth-of-type(2) {
 						float: right;
+					}
+
+					&_selected {
+						background-color: #fff;
+
+						.fas,
+						.far,
+						.fab {
+							color: #555d68 !important;
+						}
 					}
 
 					.fas,
@@ -471,6 +501,16 @@ body {
 
 					&:nth-of-type(2) {
 						margin-top: 11px;
+					}
+
+					&_selected {
+						background-color: #fff;
+
+						.fas,
+						.far,
+						.fab {
+							color: #555d68 !important;
+						}
 					}
 
 					.fas,

@@ -3,12 +3,30 @@ $(document).ready(function(){
 		closeControlPanelButton = $('.controlPanelPopup__closeButton'),
 		controlPanelPopupActive	= $('.controlPanelPopup');
 
-	callControlPanelButton.click(function(){
+	callControlPanelButton.click(function() {
 		controlPanelPopupActive.addClass('controlPanelPopup_active');
 	});
 
-	closeControlPanelButton.click(function(){
+	closeControlPanelButton.click(function() {
 		controlPanelPopupActive.removeClass('controlPanelPopup_active');
+	});
+
+	var circleIcon = $('.controlPanelPopup__circleIcon'),
+		squareIcon = $('.controlPanelPopup__squareIcon'),
+		verticalIcon = $('.controlPanelPopup__verticalIcon'),
+		horizontalIcon = $('.controlPanelPopup__horizontalIcon');
+
+	circleIcon.click(function() {
+		$(this).toggleClass('controlPanelPopup__circleIcon_selected');
+	});
+	squareIcon.click(function() {
+		$(this).toggleClass('controlPanelPopup__squareIcon_selected');
+	});
+	verticalIcon.click(function() {
+		$(this).toggleClass('controlPanelPopup__verticalIcon_selected');
+	});
+	horizontalIcon.click(function() {
+		$(this).toggleClass('controlPanelPopup__horizontalIcon_selected');
 	});
 
 	var swiperSlide = $('.swiper-slide'),
@@ -23,19 +41,20 @@ $(document).ready(function(){
 		closeImgChoiceButton = $('.imgChoicePopup__closeButton'),
 		imgChoicePopupActive = $('.imgChoicePopup');
 
-	callImgChoiceButton.click(function(){
+	callImgChoiceButton.click(function() {
 		imgChoicePopupActive.addClass('imgChoicePopup_active');
 	});
 
-	closeImgChoiceButton.click(function(){
+	closeImgChoiceButton.click(function() {
 		imgChoicePopupActive.removeClass('imgChoicePopup_active');
+		callImgChoiceButton.toggleClass('controlPanelPopup__squareIcon_selected');
 	});
 
 	var animsitionOverlay = $('.animsition-overlay');
 
 	var imgChoiceBg = $('.imgChoicePopup__img');
 
-	imgChoiceBg.click(function(){
+	imgChoiceBg.click(function() {
 		var thisImg = $(this);
 		var thisImgClasses = thisImg.attr('class').split(' ');
 		var thisImgSecondClass = thisImgClasses[1];
