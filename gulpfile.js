@@ -56,7 +56,7 @@ var 	config			= {
 gulp.task('html:dist',	function()	{
 	gulp.src(path.app.pug)
 		.pipe(pug({
-			pretty: true
+			pretty: false
 		}))
 		.pipe(gulp.dest(path.dist.html))
 		.pipe(reload({stream:	true}));	//Перезагрузка сервера для обновлений
@@ -77,7 +77,7 @@ gulp.task('style:dist',	function()	{
 		.pipe(sourcemaps.init())
 		.pipe(sass())
 		.pipe(prefixer())
-		// .pipe(cssmin())
+		.pipe(cssmin())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.dist.css))
 		.pipe(reload({stream:	true}));
