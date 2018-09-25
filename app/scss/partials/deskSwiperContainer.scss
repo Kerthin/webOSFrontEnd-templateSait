@@ -1,0 +1,210 @@
+.swiper-container {
+	width: 100%;
+	height: 96vh;
+	overflow: hidden;
+
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+
+		.swiper-slide {
+			.desk {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+
+				.desk__iconList {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-around;
+
+					.desk__iconListCell {
+						display: flex;
+						align-items: center;
+						float: left;
+						width: 144px;
+						height: 16vh;
+						margin: 0 7%;
+
+						.desk__iconWrap {
+							width: 100%;
+							height: 160px;
+
+							.desk__icon {
+								width: 100%;
+								height: 144px;
+
+								@mixin appIconMix($appIcon) {
+									&.desk__icon_#{$appIcon} {
+										background: url(#{$iconPathLg}/#{$appIcon}.png);
+										background-size: contain;
+										background-position: center;
+										background-repeat: no-repeat;
+
+										@media screen and (max-width: 1327px) {
+											background: url(#{$iconPathMd}/#{$appIcon}.png);
+											background-size: contain;
+											background-position: center;
+											background-repeat: no-repeat;
+										}
+
+										@media screen and (max-width: 891px) {
+											background: url(#{$iconPathSm}/#{$appIcon}.png);
+											background-size: contain;
+											background-position: center;
+											background-repeat: no-repeat;
+										}
+									}
+								}
+
+								@include appIconMix(facetime);
+								@include appIconMix(calendar);
+								@include appIconMix(photos);
+								@include appIconMix(camera);
+								@include appIconMix(mail);
+								@include appIconMix(clock);
+								@include appIconMix(maps);
+								@include appIconMix(weather);
+								@include appIconMix(notes);
+								@include appIconMix(reminders);
+								@include appIconMix(stocks);
+								@include appIconMix(videos);
+								@include appIconMix(iTunesStore);
+								@include appIconMix(appStore);
+								@include appIconMix(iBooks);
+								@include appIconMix(health);
+								@include appIconMix(home);
+								@include appIconMix(wallet);
+								@include appIconMix(settings);
+								@include appIconMix(phone);
+								@include appIconMix(safari);
+								@include appIconMix(messages);
+								@include appIconMix(appleMusic);
+								@include appIconMix(news);
+
+								@include appIconMix(appleWatch);
+								@include appIconMix(contacts);
+								@include appIconMix(findFriends);
+								@include appIconMix(findIPhone);
+								@include appIconMix(garageBand);
+								@include appIconMix(healthBook);
+								@include appIconMix(compass);
+								@include appIconMix(iBooks);
+								@include appIconMix(iMovie);
+								@include appIconMix(iPhoto);
+								@include appIconMix(iTunesRadio);
+								@include appIconMix(iTunesU);
+								@include appIconMix(music);
+								@include appIconMix(passbook);
+								@include appIconMix(photoBooth);
+								@include appIconMix(podcats);
+								@include appIconMix(tips);
+								@include appIconMix(youtube);
+								@include appIconMix(calculator);
+								@include appIconMix(trailers);
+								@include appIconMix(voiceMemos);
+								@include appIconMix(iCloudDrive);
+								@include appIconMix(trashEmpty);
+								@include appIconMix(trashFull);
+
+								@include appIconMix(controlCenter);
+								@include appIconMix(gameCenter);
+								@include appIconMix(iOS8);
+								@include appIconMix(multitaks);
+								@include appIconMix(newstand);
+								@include appIconMix(notificationCenter);
+								@include appIconMix(SDK);
+								@include appIconMix(siri);
+								@include appIconMix(user);
+								@include appIconMix(documents);
+								@include appIconMix(downloads);
+
+								@media screen and (max-width: 1327px) {
+									height: 96px;
+								}
+								@media screen and (max-width: 891px) {
+									height: 72px;
+								}
+								@media screen and (max-width: 320px) {
+									height: 58px;
+								}
+							}
+
+							.desk__iconNameWrap {
+								display: flex;
+								flex-wrap: wrap;
+								justify-content: space-around;
+								width: 100%;
+								height: 16px;
+
+								&_deleted {
+									display: none;
+								}
+
+								.desk__iconName {
+									font-family: 'Roboto', sans-serif;
+									font-size: 14px;
+									font-weight: 100;
+									text-align: center;
+									text-decoration: none;
+									color: #fff;
+
+									@media screen and (max-width: 700px) {
+										font-size: 10px;
+									}
+								}
+							}
+
+							@media screen and (max-width: 1327px) {
+								height: 112px;
+							}
+							@media screen and (max-width: 891px) {
+								height: 88px;
+							}
+							@media screen and (max-width: 320px) {
+								height: 74px;
+							}
+
+							&_size_icon {
+								height: 144px;
+
+								@media screen and (max-width: 1327px) {
+									height: 96px;
+								}
+								@media screen and (max-width: 891px) {
+									height: 72px;
+								}
+								@media screen and (max-width: 320px) {
+									height: 58px;
+								}
+							}
+						}
+
+						@media screen and (max-width: 1327px) {
+							width: 96px;
+						}
+						@media screen and (max-width: 891px) {
+							width: 72px;
+						}
+						@media screen and (max-width: 673px) {
+							margin: 0 5%;
+						}
+						@media screen and (max-width: 494px) {
+							margin: 0 4%;
+						}
+						@media screen and (max-width: 436px) {
+							margin: 0 3%;
+						}
+						@media screen and (max-width: 390px) {
+							margin: 0 2%;
+						}
+						@media screen and (max-width: 320px) {
+							width: 58px;
+							margin: 0 1%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

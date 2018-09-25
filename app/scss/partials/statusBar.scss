@@ -1,0 +1,156 @@
+.statusBar {
+	display: flex;
+	width: 100%;
+	height: 2vh;
+	overflow: hidden;
+
+	.statusBar__network {
+		display: flex;
+		width: 130px;
+		height: 100%;
+
+		.statusBar__cellularWrap {
+			@extend %centralPositioning;
+			width: 70px;
+			height: 100%;
+
+			.fas {
+				font-size: $statusBarSizeElements;
+				color: $statusBarColorElements;
+
+				@media screen and (max-width: 494px) {
+					font-size: $statusBarMediaSizeElements;
+				}
+			}
+
+			@media screen and (max-width: 494px) {
+				align-items: flex-end;
+			}
+		}
+
+		.statusBar__cellularNameWrap {
+			@extend %centralPositioning;
+			width: 30px;
+			height: 100%;
+
+			.statusBar__cellularName {
+				font-family: $statusBarFontElements;
+				font-size: $statusBarSizeElements;
+				color: $statusBarColorElements;
+
+				@media screen and (max-width: 494px) {
+					font-size: $statusBarMediaSizeElements;
+				}
+			}
+
+			@media screen and (max-width: 494px) {
+				align-items: flex-end;
+			}
+		}
+
+		.statusBar__wifiWrap {
+			@extend %centralPositioning;
+			width: 30px;
+			height: 100%;
+
+			.fas {
+				font-size: $statusBarSizeElements;
+				color: $statusBarColorElements;
+
+				@media screen and (max-width: 494px) {
+					font-size: $statusBarMediaSizeElements;
+				}
+			}
+
+			@media screen and (max-width: 494px) {
+				align-items: flex-end;
+			}
+		}
+	}
+
+	.statusBar__timeWrap {
+		@extend %centralPositioning;
+		flex: 1;
+		height: 100%;
+
+		.statusBar__time {
+			font-family: $statusBarFontElements;
+			font-size: $statusBarSizeElements;
+			color: $statusBarColorElements;
+
+			@media screen and (max-width: 494px) {
+				font-size: $statusBarMediaSizeElements;
+			}
+		}
+
+		@media screen and (max-width: 494px) {
+			align-items: flex-end;
+		}
+	}
+
+	.statusBar__charge {
+		display: flex;
+		justify-content: flex-end;
+		width: 130px;
+		height: 100%;
+
+		.statusBar__fullscreenWrap {
+			@extend %centralPositioning;
+			width: 30px;
+			height: 100%;
+			cursor: pointer;
+
+			.fas {
+				font-size: $statusBarSizeElements;
+				color: $statusBarColorElements;
+
+				@media screen and (max-width: 494px) {
+					font-size: $statusBarMediaSizeElements;
+				}
+			}
+
+			@media screen and (max-width: 494px) {
+				align-items: flex-end;
+			}
+		}
+
+		.statusBar__batteryWrap {
+			@extend %centralPositioning;
+			width: 30px;
+			height: 100%;
+
+			.fas {
+				font-size: $statusBarSizeElements;
+				color: $statusBarColorElements;
+
+				@media screen and (max-width: 494px) {
+					font-size: $statusBarMediaSizeElements;
+				}
+			}
+
+			@media screen and (max-width: 494px) {
+				align-items: flex-end;
+			}
+		}
+
+		.statusBar__chargeDigitWrap {
+			@extend %centralPositioning;
+			width: 35px;
+			height: 100%;
+
+			.statusBar__chargeDigit {
+				font-family: $statusBarFontElements;
+				font-size: $statusBarSizeElements;
+				color: $statusBarColorElements;
+
+				@media screen and (max-width: 494px) {
+					font-size: $statusBarMediaSizeElements;
+				}
+			}
+
+			@media screen and (max-width: 494px) {
+				align-items: flex-end;
+			}
+		}
+	}
+}
