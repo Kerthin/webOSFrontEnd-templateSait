@@ -6,8 +6,8 @@
   <a href="#"><img src="https://img.shields.io/badge/npm-v6.4.0-blue.svg" alt="Version"></a>
   <a href="#"><img src="https://img.shields.io/badge/node-v9.4.0-blue.svg" alt="Version"></a>
   <a href="#"><img src="https://img.shields.io/badge/bower-v1.8.4-blue.svg" alt="Version"></a> <br>
-  <a href="#"><img src="https://img.shields.io/badge/repo%20size-166.7%20MB-green.svg" alt="Size"></a>
-  <a href="#"><img src="https://img.shields.io/badge/minified%20repo-7.5%20MB-green.svg" alt="Size"></a>
+  <a href="#"><img src="https://img.shields.io/badge/repo%20size-440.8%20MB-green.svg" alt="Size"></a>
+  <a href="#"><img src="https://img.shields.io/badge/minified%20repo-20%20MB-green.svg" alt="Size"></a>
   <a href="#"><img src="https://img.shields.io/badge/project%20version-v0.9-blue.svg" alt="Version"></a>
 </p>
 
