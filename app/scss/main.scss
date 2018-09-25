@@ -272,15 +272,15 @@ body {
 
 				.desk__iconList {
 					display: flex;
-					justify-content: space-around;
 					flex-wrap: wrap;
+					justify-content: space-around;
 
 					.desk__iconListCell {
+						display: flex;
+						align-items: center;
+						float: left;
 						width: 144px;
 						height: 16vh;
-						display: flex;
-						float: left;
-						align-items: center;
 						margin: 0 7%;
 
 						.desk__iconWrap {
@@ -393,8 +393,8 @@ body {
 
 							.desk__iconNameWrap {
 								display: flex;
-								justify-content: space-around;
 								flex-wrap: wrap;
+								justify-content: space-around;
 								width: 100%;
 								height: 16px;
 
@@ -502,17 +502,17 @@ body {
 		position: absolute;
 		width: 100%;
 		height: 100vh;
-		background-color: #dadadc;
 		opacity: .9;
+		background-color: #dadadc;
 	}
 
 	.controlPanelPopup__header {
-		position: absolute;
-		width: 100%;
-		height: 10vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: absolute;
+		width: 100%;
+		height: 10vh;
 
 		.fa-angle-down {
 			font-size: 45px;
@@ -525,14 +525,14 @@ body {
 		position: absolute;
 		width: 80%;
 		height: 90vh;
-		margin: 10vh 10% 0;
 		text-align: center;
+		margin: 10vh 10% 0;
 		overflow: scroll;
 
 		.controlPanelPopup__contentItem {
+			display: inline-block;
 			width: 170px;
 			height: 170px;
-			display: inline-block;
 
 			.controlPanelPopup__iconsBox {
 				width: 92%;
@@ -557,14 +557,14 @@ body {
 					height: 50%;
 
 					.controlPanelPopup__circleIcon {
-						width: 58px;
-						height: 58px;
-						background-color: #555d68;
-						opacity: .9;
-						border-radius: 50%;
 						display: flex;
 						justify-content: center;
 						align-items: center;
+						width: 58px;
+						height: 58px;
+						border-radius: 50%;
+						background-color: #555d68;
+						opacity: .9;
 						cursor: pointer;
 
 						&_selected {
@@ -590,12 +590,12 @@ body {
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					position: relative;
 					width: 72px;
 					height: 72px;
 					border-radius: 11px;
 					background-color: #203846;
 					opacity: .9;
-					position: relative;
 					cursor: pointer;
 
 					&:nth-of-type(1) {
@@ -733,12 +733,12 @@ body {
 	}
 
 	.imgChoicePopup__header {
-		position: absolute;
-		width: 100%;
-		height: 10vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: absolute;
+		width: 100%;
+		height: 10vh;
 
 		.fa-angle-down {
 			font-size: 45px;
@@ -751,8 +751,8 @@ body {
 		position: absolute;
 		width: 80%;
 		height: 90vh;
-		margin: 10vh 10% 0;
 		text-align: center;
+		margin: 10vh 10% 0;
 		overflow: scroll;
 
 		.imgChoicePopup__contentItem {
@@ -761,13 +761,12 @@ body {
 			height: 230px;
 
 			.imgChoicePopup__img {
-				width: 98%;
-				height: 98%;
-				margin: 1%;
-				// background-color: red;
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
+				width: 98%;
+				height: 98%;
+				margin: 1%;
 				cursor: pointer;
 			}
 		}
