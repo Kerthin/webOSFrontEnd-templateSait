@@ -1,0 +1,822 @@
+
+<html>
+  <head>
+    <title>webOS</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1, height=device-height"/>
+    <meta name="description" content="Page description"/>
+    <meta name="keywords" content="page, keywords"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="copyright" content="Author"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000"/>
+    <meta name="apple-mobile-web-app-title" content="Application Name"/>
+    <meta name="msapplication-TileImage" content="img/icon/144x144.png"/>
+    <meta name="msapplication-TileColor" content="#000000"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body class="animsition-overlay _bg_shore4" data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800">
+    <div class="preloader" id="pagePreloader">
+      <div class="preloader__load"><span class="preloader__dot"></span><span class="preloader__dot"></span><span class="preloader__dot"></span><span class="preloader__dot"></span>
+      </div>
+    </div>
+    <div class="statusBar">
+      <div class="statusBar__network">
+        <div class="statusBar__cellularWrap"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+        </div>
+        <div class="statusBar__cellularNameWrap">
+          <p class="statusBar__cellularName">AT&T</p>
+        </div>
+        <div class="statusBar__wifiWrap"><i class="fas fa-wifi"></i></div>
+      </div>
+      <div class="statusBar__timeWrap">
+        <p class="statusBar__time" id="timeDisplay"></p>
+      </div>
+      <div class="statusBar__charge">
+        <div class="statusBar__fullscreenWrap" id="fullscreenStatusBarButton"><i class="fas fa-arrows-alt"></i></div>
+        <div class="statusBar__chargeDigitWrap">
+          <p class="statusBar__chargeDigit" id="chargeDigitDisplay">83%</p>
+        </div>
+        <div class="statusBar__batteryWrap"><i class="fas fa-battery-full"></i></div>
+      </div>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="firstDragSlide">
+          <div class="desk" data-force="30">
+            <div class="desk__iconList">
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_facetime"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Facetime</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_calendar"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Calendar</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_photos"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Photos</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_camera"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Camera</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_mail"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Mail</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_clock"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Clock</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_maps"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Maps</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_weather"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Weather</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_notes"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Notes</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_reminders"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Reminders</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_stocks"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Stocks</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_videos"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Videos</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iTunesStore"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iTunes Store</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_appStore"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">App Store</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iBooks"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iBooks</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_health"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Health</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_home"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Home</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_wallet"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Wallet</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_settings"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Settings</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_phone"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Phone</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_safari"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Safari</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_messages"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Messages</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_appleMusic"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Music</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_news"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">News</p>
+                                  </div></a></div>
+                            </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="secondDragSlide">
+          <div class="desk" data-force="30">
+            <div class="desk__iconList">
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_appleWatch"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Apple Watch</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_contacts"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Contacts</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_findFriends"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Find Friends</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_findIPhone"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Find iPhone</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_garageBand"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Garage Band</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_healthBook"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Health Book</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_compass"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Compass</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iBooks"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iBooks</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iMovie"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iMovie</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iPhoto"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iPhoto</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iTunesRadio"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iTunes Radio</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iTunesU"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iTunes U</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_music"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Music</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_passbook"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Passbook</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_photoBooth"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Photo Booth</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_podcats"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Podcats</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_tips"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Tips</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_youtube"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">You Tube</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_calculator"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Calculator</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_trailers"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Trailers</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_voiceMemos"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Voice Memos</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iCloudDrive"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iCloud Drive</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_trashEmpty"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Trash Empty</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_trashFull"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Trash Full</p>
+                                  </div></a></div>
+                            </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="thirdDragSlide">
+          <div class="desk" data-force="30">
+            <div class="desk__iconList">
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_controlCenter"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Control Center</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_gameCenter"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Game Center</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_iOS8"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">iOS 8</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_multitaks"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Multitaks</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_newstand"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Newstand</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_notificationCenter"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Notification Center</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_SDK"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">SDK</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_siri"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Siri</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_user"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">User</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_documents"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Documents</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="app.html" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_downloads"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Downloads</p>
+                                  </div></a></div>
+                            </div>
+                            <div class="desk__iconListCell">
+                              <div class="desk__iconWrap"><a class="desk__appLink" href="" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="1000">
+                                  <div class="desk__icon desk__icon_tips"></div>
+                                  <div class="desk__iconNameWrap">
+                                    <p class="desk__iconName">Tips</p>
+                                  </div></a></div>
+                            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controlPanel">
+      <div class="controlPanel__button"></div>
+    </div>
+    <div class="controlPanelPopup">
+      <div class="controlPanelPopup__opacityLayer"></div>
+      <div class="controlPanelPopup__header"><i class="fas fa-angle-down controlPanelPopup__closeButton"></i></div>
+      <div class="controlPanelPopup__content">
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox controlPanelPopup__iconsBox_borderRad controlPanelPopup__iconsBox_bg">
+                    <div class="controlPanelPopup__circleIconWrap">
+                      <div class="controlPanelPopup__circleIcon"><i class="fas fa-plane"></i></div>
+                    </div>
+                    <div class="controlPanelPopup__circleIconWrap">
+                      <div class="controlPanelPopup__circleIcon"><i class="fas fa-broadcast-tower"></i></div>
+                    </div>
+                    <div class="controlPanelPopup__circleIconWrap">
+                      <div class="controlPanelPopup__circleIcon"><i class="fas fa-wifi"></i></div>
+                    </div>
+                    <div class="controlPanelPopup__circleIconWrap">
+                      <div class="controlPanelPopup__circleIcon"><i class="fab fa-bluetooth-b"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox controlPanelPopup__iconsBox_borderRad controlPanelPopup__iconsBox_bg"></div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon js-controlPanelPopup__dragButton"><i class="fas fa-unlock"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-moon"></i></div>
+                    <div class="controlPanelPopup__horizontalIcon controlPanelPopup__horizontalIcon_mgTop js-controlPanelPopup__fullscreenButton"><i class="fas fa-desktop"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__verticalIcon"><i class="fas fa-sun"></i></div>
+                    <div class="controlPanelPopup__verticalIcon"><i class="fas fa-volume-up"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-lightbulb"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-calculator"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-camera"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon js-controlPanelPopup__imgChoiceButton"><i class="far fa-image"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="far fa-clock"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fab fa-apple"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-car"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__horizontalIcon"><i class="fab fa-apple-pay"></i></div>
+                    <div class="controlPanelPopup__horizontalIcon"><i class="fab fa-cc-visa"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-search-plus"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="far fa-calendar-alt"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="far fa-dot-circle"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-stopwatch"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-battery-half"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-globe"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-cloud"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="far fa-address-card"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon js-controlPanelPopup__delNameButton"><i class="far fa-edit"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-fingerprint"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-signal"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-microphone"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-phone-slash"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-comment"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-video"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-user"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-clone"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-share-alt"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-route"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-gamepad"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__verticalIcon"><i class="fas fa-headphones-alt"></i></div>
+                    <div class="controlPanelPopup__verticalIcon"><i class="fas fa-street-view"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-cog"></i></div>
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fab fa-accusoft"></i></div>
+                    <div class="controlPanelPopup__horizontalIcon controlPanelPopup__horizontalIcon_mgTop undefined"><i class="fas fa-bezier-curve"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-project-diagram"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-bed"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-database"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-dna"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-euro-sign"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fab fa-fly"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-folder"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fab fa-google-drive"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-layer-group"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-solar-panel"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-tablet"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-assistive-listening-systems"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__horizontalIcon"><i class="fas fa-braille"></i></div>
+                    <div class="controlPanelPopup__horizontalIcon"><i class="fab fa-btc"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-chart-pie"></i></div>
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fab fa-hubspot"></i></div>
+                    <div class="controlPanelPopup__horizontalIcon controlPanelPopup__horizontalIcon_mgTop undefined"><i class="fas fa-inbox"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fab fa-itunes-note"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-pills"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-podcast"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-shield-alt"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fab fa-staylinked"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-th-list"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-cubes"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fab fa-nintendo-switch"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__verticalIcon"><i class="fas fa-thermometer-full"></i></div>
+                    <div class="controlPanelPopup__verticalIcon"><i class="fas fa-tint"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-signal"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-sliders-h"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fab fa-soundcloud"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-fire"></i></div>
+                  </div>
+                </div>
+                <div class="controlPanelPopup__contentItem">
+                  <div class="controlPanelPopup__iconsBox">
+                    <div class="controlPanelPopup__squareIcon undefined"><i class="fas fa-hdd"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-laptop"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="controlPanelPopup__squareIcon"><i class="far fa-save"></i></div>
+                  </div>
+                </div>
+      </div>
+    </div>
+    <div class="imgChoicePopup">
+      <div class="imgChoicePopup__header"><i class="fas fa-angle-down imgChoicePopup__closeButton"></i></div>
+      <div class="imgChoicePopup__content">
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_abstraction1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_abstraction2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_abstraction3"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_abstraction4"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_abstraction5"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_abstraction6"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_desert"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_eyedrops1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_eyedrops2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_eyedrops3"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_fish1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_fish2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_fish3"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_fish4"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_fish5"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_flower1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_flower2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_flower3"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_galaxy"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_inkBlast1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_inkBlast2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_inkBlast3"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_inkBlast4"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_inkBlast5"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_inkBlast6"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_moon"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_mountain1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_mountain2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_rainbow1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_rainbow2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_rainbowBlur1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_rainbowBlur2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_rainbowBlur3"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_rainbowBlur4"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_rainbowBlur5"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_rainbowHair"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_shore1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_shore2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_shore3"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_shore4"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_wave1"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_wave2"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_wave3"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_wave4"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_wave5"></div>
+                </div>
+                <div class="imgChoicePopup__contentItem">
+                  <div class="imgChoicePopup__img _bg_wave6"></div>
+                </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
