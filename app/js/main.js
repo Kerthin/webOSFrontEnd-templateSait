@@ -44,11 +44,6 @@
 //= partials/animsitionInitializationMainPage.js
 
 /********************
-	animsitionInitializationSecondaryPage.js
-********************/
-//= partials/animsitionInitializationSecondaryPage.js
-
-/********************
 	sortableInitialization.js
 ********************/
 //= partials/sortableInitializations.js

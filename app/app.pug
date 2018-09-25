@@ -1,7 +1,31 @@
 html
 	head
 		include template/head.pug
-		include partials/linkMainApp.pug
+		include template/partials/linkFontAwesome.pug
+		include template/partials/linkMainApp.pug
 	body.animsition-overlaySecondary(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-bottom" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-bottom" data-animsition-out-duration="800")
-		a.desk__appLinkSecondary(href="index.html" data-animsition-out-class="overlay-slide-out-bottom" data-animsition-out-duration="1000") Back to the desktop
-		include template/scripts.pug
+		.statusBar
+			.statusBar__network
+				- var x = 5;
+				.statusBar__cellularWrap
+					- for (var i=1; i<=x; i++) {
+						i.fas.fa-circle
+					- }
+				.statusBar__cellularNameWrap
+					p.statusBar__cellularName AT&T
+				.statusBar__wifiWrap
+					i.fas.fa-wifi
+			.statusBar__timeWrap
+				p#timeDisplay.statusBar__time
+			.statusBar__charge
+				#fullscreenStatusBarButton.statusBar__fullscreenWrap
+					i.fas.fa-arrows-alt
+				.statusBar__chargeDigitWrap
+					p#chargeDigitDisplay.statusBar__chargeDigit 83%
+				.statusBar__batteryWrap
+					i.fas.fa-battery-full
+		.contentWrap
+			a.desk__appLinkSecondary(href="index.html" data-animsition-out-class="overlay-slide-out-bottom" data-animsition-out-duration="1000")
+				.contentWrap__backPageButton
+					p.contentWrap__backPageButtonText Back to the desktop
+		include template/partials/mainAppScripts.pug

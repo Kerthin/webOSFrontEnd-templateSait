@@ -1,8 +1,8 @@
 html
 	head
 		include template/head.pug
-		include partials/linkFontAwesome.pug
-		include partials/linkMain.pug
+		include template/partials/linkFontAwesome.pug
+		include template/partials/linkMain.pug
 	body.animsition-overlay._bg_shore4(data-animsition-overlay="true" data-animsition-in-class="overlay-slide-in-top" data-animsition-in-duration="1000" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="800")
 		#pagePreloader.preloader
 			- var x = 4;
@@ -258,4 +258,4 @@ html
 				+imgChoiceItemMix('wave4')
 				+imgChoiceItemMix('wave5')
 				+imgChoiceItemMix('wave6')
-		include template/scripts.pug
+		include template/partials/mainScripts.pug

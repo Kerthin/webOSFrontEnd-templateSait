@@ -10,10 +10,34 @@ a {
 	text-decoration: none;
 }
 body {
+	background-image: url('../image/bgImgDesk/rainbowBlur3.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	overflow: hidden;
+}
+.contentWrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 98vh;
+
+	.contentWrap__backPageButton {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 150px;
+		height: 70px;
+		border-radius: 11px;
+		background-color: #fff;
+
+		.contentWrap__backPageButtonText {
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			color: #000;
+		}
+	}
 }
 
 @import 'partials/statusBar.scss';
