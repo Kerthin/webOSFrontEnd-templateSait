@@ -25,7 +25,7 @@ var		path 			= {
 			app:			{
 				image: 	'app/image/**/*.*'	,
 				fonts: 	'app/fonts/**/*.*'	,
-				scss: 	'app/scss/**/*.scss',
+				scss: 	'app/scss/*.scss',
 				pug:	'app/*.pug'			,
 				js: 	'app/js/main.js'	
 			},
@@ -35,7 +35,7 @@ var		path 			= {
 				html: 	'app/**/*.html',
 				scss: 	'app/scss/*.scss',
 				pug:	'app/*.pug'			,
-				css: 	'app/css/**/*.css',
+				css: 	'app/css/*.css',
 				js: 	'app/js/**/*.js'
 			},
 			clean: 			{
