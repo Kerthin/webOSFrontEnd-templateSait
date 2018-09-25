@@ -27,7 +27,7 @@ var		path 			= {
 				fonts: 	'app/fonts/**/*.*'	,
 				scss: 	'app/scss/*.scss',
 				pug:	'app/*.pug'			,
-				js: 	'app/js/main.js'	
+				js: 	'app/js/*.js'	
 			},
 			watch: 			{
 				image: 	'app/image/**/*.*',
@@ -36,7 +36,7 @@ var		path 			= {
 				scss: 	'app/scss/*.scss',
 				pug:	'app/*.pug'			,
 				css: 	'app/css/*.css',
-				js: 	'app/js/**/*.js'
+				js: 	'app/js/*.js'
 			},
 			clean: 			{
 				dist:	'./dist'
