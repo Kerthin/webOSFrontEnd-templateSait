@@ -24,6 +24,13 @@ $statusBarColorElements: #fff;
 $statusBarFontElements: 'Roboto', sans-serif;
 
 /********************
+	## Size
+********************/
+
+$statusBarSizeElements: 12px;
+$statusBarMediaSizeElements: 10px;
+
+/********************
 	## Path
 ********************/
 
@@ -179,11 +186,11 @@ body {
 			height: 100%;
 
 			.fas {
-				font-size: 12px;
+				font-size: $statusBarSizeElements;
 				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
-					font-size: 10px;
+					font-size: $statusBarMediaSizeElements;
 				}
 			}
 
@@ -199,11 +206,11 @@ body {
 
 			.statusBar__cellularName {
 				font-family: $statusBarFontElements;
-				font-size: 12px;
+				font-size: $statusBarSizeElements;
 				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
-					font-size: 10px;
+					font-size: $statusBarMediaSizeElements;
 				}
 			}
 
@@ -218,11 +225,11 @@ body {
 			height: 100%;
 
 			.fas {
-				font-size: 14px;
+				font-size: $statusBarSizeElements;
 				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
-					font-size: 12px;
+					font-size: $statusBarMediaSizeElements;
 				}
 			}
 
@@ -239,11 +246,11 @@ body {
 
 		.statusBar__time {
 			font-family: $statusBarFontElements;
-			font-size: 14px;
+			font-size: $statusBarSizeElements;
 			color: $statusBarColorElements;
 
 			@media screen and (max-width: 494px) {
-				font-size: 12px;
+				font-size: $statusBarMediaSizeElements;
 			}
 		}
 
@@ -265,11 +272,11 @@ body {
 			cursor: pointer;
 
 			.fas {
-				font-size: 16px;
+				font-size: $statusBarSizeElements;
 				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
-					font-size: 12px;
+					font-size: $statusBarMediaSizeElements;
 				}
 			}
 
@@ -284,11 +291,11 @@ body {
 			height: 100%;
 
 			.fas {
-				font-size: 16px;
+				font-size: $statusBarSizeElements;
 				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
-					font-size: 12px;
+					font-size: $statusBarMediaSizeElements;
 				}
 			}
 
@@ -304,11 +311,11 @@ body {
 
 			.statusBar__chargeDigit {
 				font-family: $statusBarFontElements;
-				font-size: 14px;
+				font-size: $statusBarSizeElements;
 				color: $statusBarColorElements;
 
 				@media screen and (max-width: 494px) {
-					font-size: 12px;
+					font-size: $statusBarMediaSizeElements;
 				}
 			}
 
