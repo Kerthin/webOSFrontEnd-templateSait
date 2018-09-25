@@ -1,0 +1,19 @@
+@import '../../bower_components/reset.scss/reset.scss';
+@import 'partials/libs/animsition.min.scss';
+@import 'partials/_appVariables.scss';
+@import 'partials/_extends.scss';
+
+::-webkit-scrollbar {
+	width: 0;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+@import 'partials/statusBar.scss';
